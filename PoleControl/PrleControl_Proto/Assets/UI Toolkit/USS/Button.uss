@@ -1,0 +1,35 @@
+.ButtonStyle {
+    margin-top: 50px;
+    height: 8%;
+    font-size: 70px;
+    background-image: none;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-left-color: rgb(0, 255, 63);
+    border-right-color: rgb(0, 255, 63);
+    border-top-color: rgb(0, 255, 63);
+    border-bottom-color: rgb(0, 255, 63);
+    background-color: rgb(86, 123, 95);
+    color: rgba(200, 200, 200, 255);
+    flex-grow: 0;
+}
+
+.ButtonStyle :hover {
+    margin-top: 50px;
+    height: 8%;
+    font-size: 70px;
+    background-image: none;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-left-color: rgb(0, 255, 63);
+    border-right-color: rgb(0, 255, 63);
+    border-top-color: rgb(0, 255, 63);
+    border-bottom-color: rgb(0, 255, 63);
+    background-color: rgb(13, 22, 15);
+    color: rgb(200, 200, 200);
+    flex-grow: 0;
+}
