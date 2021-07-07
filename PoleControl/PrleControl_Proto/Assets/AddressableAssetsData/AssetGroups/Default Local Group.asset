@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: efe388d82ee8c3049a1ac38e5a12fcf7
+  m_SerializeEntries:
+  - m_GUID: b143c1e486b10454f8765d22beccaece
+    m_Address: Static
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e4b5c02ff003e7d4a9b4dcd36d6e7f63
+    m_Address: MovableX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 40ae2e307a44f504ca42996309c64743
+    m_Address: MovableY
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 22d012fa569329640b0c7d001ce7acc7
+    m_Address: Rotatable
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: af3267ef43edd7a42bc54c28f1adc1ae
+    m_Address: MoveXAndRotate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7db4667a8d97bf445a3da7c97451b4fc
+    m_Address: MoveYAndRotate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ced61e1ce1da5c54496ae9219002876f
+    m_Address: Collectable
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fc4830abc2bd6b34c9509bd4d448c58f
+    m_Address: Goal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b13b338daef29044aba3b8cb4c1402ea, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4761c9803ffccbf469b53f1691a64e35, type: 2}
+    - {fileID: 11400000, guid: 3f01ce23d7129fc4d82e3af67877b321, type: 2}

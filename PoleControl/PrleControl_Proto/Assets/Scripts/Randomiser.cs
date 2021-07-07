@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using Sequence = DG.Tweening.Sequence;
@@ -49,6 +48,10 @@ public class Randomiser : MonoBehaviour
         }
     }
 
+
+private void OnDestroy() {
+    Actions.LevelCleared -= Randomise;
+}
     private void Randomise()
     {
         Vector3 pos = transform.position;

@@ -131,12 +131,13 @@ public class LevelEditor : EditorWindow, ISavable
     #region Functionality methods
     public void CreateObstacle(ObstacleType type)
     {
-        GameObject obj = Resources.Load<GameObject>(type.ToString());
-        obj = Instantiate(obj);
+        
+        var obj = AssetDatabase.LoadAssetAtPath("Assets/Resources_moved/"+type.ToString()+".prefab",typeof(GameObject));
+        GameObject Obj =  (GameObject)Instantiate(obj);
         VerticalDistance += VerticalDistanceAdition;
-        obj.transform.position = new Vector2(UnityEngine.Random.Range(-2.0f,2.0f), VerticalDistance);
+        Obj.transform.position = new Vector2(UnityEngine.Random.Range(-2.0f,2.0f), VerticalDistance);
 
-        instancedObjects.Add(obj);
+        instancedObjects.Add(Obj);
     }
 
 
@@ -181,11 +182,11 @@ public class LevelEditor : EditorWindow, ISavable
         ResetLevel();
         foreach (var item in levelData.objects)
         {
-            GameObject obj = Resources.Load<GameObject>(item.obstacleType.ToString());
-            obj = Instantiate(obj);
-            obj.transform.position = item.pos;
+           var obj = AssetDatabase.LoadAssetAtPath("Assets/Resources_moved/"+item.obstacleType.ToString()+".prefab",typeof(GameObject));
+            GameObject Obj =  (GameObject)Instantiate(obj);
+            Obj.transform.position = item.pos;
 
-            instancedObjects.Add(obj);
+            instancedObjects.Add(Obj);
         }
     }
 

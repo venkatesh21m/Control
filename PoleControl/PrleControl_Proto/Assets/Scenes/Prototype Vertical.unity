@@ -1963,7 +1963,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0, y: -1e-45, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 1e-45, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2145,7 +2145,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241241962}
-  m_LocalRotation: {x: -0, y: -1e-45, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 1e-45, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2792,6 +2792,39 @@ MonoBehaviour:
   - {fileID: 8231211144478903544, guid: 7db4667a8d97bf445a3da7c97451b4fc, type: 3}
   - {fileID: 4585998898382615269, guid: ced61e1ce1da5c54496ae9219002876f, type: 3}
   - {fileID: 4585998898382615269, guid: fc4830abc2bd6b34c9509bd4d448c58f, type: 3}
+  _obstacle:
+  - m_AssetGUID: b143c1e486b10454f8765d22beccaece
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: e4b5c02ff003e7d4a9b4dcd36d6e7f63
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 40ae2e307a44f504ca42996309c64743
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 22d012fa569329640b0c7d001ce7acc7
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: af3267ef43edd7a42bc54c28f1adc1ae
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 7db4667a8d97bf445a3da7c97451b4fc
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: ced61e1ce1da5c54496ae9219002876f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: fc4830abc2bd6b34c9509bd4d448c58f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   goal: {fileID: 4585998898382615269, guid: fc4830abc2bd6b34c9509bd4d448c58f, type: 3}
   collectable: {fileID: 4585998898382615269, guid: ced61e1ce1da5c54496ae9219002876f, type: 3}
   obstacleType: 4

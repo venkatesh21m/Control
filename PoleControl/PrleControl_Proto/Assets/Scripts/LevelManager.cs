@@ -2,7 +2,9 @@ using System.Collections.Generic;
 using TMPro;
 using System.IO;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using System;
+using System.Linq;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class LevelManager : MonoBehaviour
 
 	[SerializeField]
 	private GameObject[] obstacle;
+	[SerializeField]
+	private AssetReference[] _obstacle;
 	[SerializeField]
 	private GameObject goal,collectable;
 
@@ -49,11 +53,12 @@ public class LevelManager : MonoBehaviour
 
 	private void disableAllObstacles()
 	{
-		foreach (var activeObstacle in ActiveObstacles)
+		List<Randomiser> activeObstacles = FindObjectsOfType<Randomiser>().ToList();
+		foreach (var activeObstacle in activeObstacles)
 		{
-			activeObstacle.SetActive(false);
+			Addressables.ReleaseInstance(activeObstacle.gameObject);
 		}
-		ActiveObstacles.Clear();
+		activeObstacles.Clear();
 	}
 
 	#region  pool
@@ -82,6 +87,7 @@ public class LevelManager : MonoBehaviour
 	#endregion
 	GameObject GetObstacle(ObstacleType type)
 	{
+		//return _obstacle[((int)type)].InstantiateAsync<GameObject>()=>;
         return obstacle[((int)type)];
 	}
 
@@ -107,14 +113,16 @@ public class LevelManager : MonoBehaviour
 
 	public void LoadLevel(LevelData levelData)
 	{
-		disableAllObstacles();
+		// disableAllObstacles();
 		foreach (var item in levelData.objects)
 		{
-			GameObject obj = GetObstacle(item.obstacleType);
-			obj = Instantiate(obj);
-			obj.transform.position = item.pos;
+			//GameObject obj = GetObstacle(item.obstacleType);
+			//_obstacle[((int)item.obstacleType)].InstantiateAsync<GameObject>(item.pos);
+			Addressables.InstantiateAsync(_obstacle[((int)item.obstacleType)],item.pos,Quaternion.identity);
+			//obj.transform.position = item.pos;
 
-			ActiveObstacles.Add(obj);
+			//ActiveObstacles.Add(obj);
 		}
 	}
+
 }
