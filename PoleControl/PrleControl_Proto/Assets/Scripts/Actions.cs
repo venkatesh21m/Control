@@ -6,6 +6,7 @@ using UnityEngine;
 [Serializable]
 public class Actions 
 {
+   public static Action StartGame;
    public static Action GameOver;
    public static Action LevelCleared;
    public static Action CollectableCollected;

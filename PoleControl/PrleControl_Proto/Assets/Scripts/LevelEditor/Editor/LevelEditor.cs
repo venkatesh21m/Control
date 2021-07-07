@@ -156,7 +156,7 @@ public class LevelEditor : EditorWindow, ISavable
         LevelData levelData = new LevelData();
         foreach (var item in instancedObjects)
         {
-            Object ob = new Object();
+            objectinLevel ob = new objectinLevel();
             ob.obstacleType = item.GetComponent<Randomiser>()._ObstacleType;
             ob.pos = item.transform.position;
             levelData.objects.Add(ob);
@@ -167,7 +167,7 @@ public class LevelEditor : EditorWindow, ISavable
     public void LoadLevel()
     {
         LevelData levelData = new LevelData();
-        string fullpath = Path.Combine(Path.Combine(Application.persistentDataPath, PathToSave), levelName);
+        string fullpath = Path.Combine(Path.Combine(Application.dataPath, PathToSave), levelName);
         string jsondata = File.ReadAllText(fullpath);
         levelData.LoadFromJsom(jsondata);
         LoadSaveData(levelData);
@@ -192,7 +192,7 @@ public class LevelEditor : EditorWindow, ISavable
     public void PopulateSaveData(LevelData levelData)
     {
         string jsontosave = levelData.ToJson();
-        string fullpath = Path.Combine(Path.Combine(Application.persistentDataPath, PathToSave), levelName);
+        string fullpath = Path.Combine(Path.Combine(Application.dataPath, PathToSave), levelName);
         File.WriteAllText(fullpath, jsontosave);
         Debug.Log("FIle saved to " + fullpath);
     }

@@ -43,7 +43,7 @@ public class LevelCreator : MonoBehaviour, ISavable
         LevelData levelData = new LevelData();
         foreach (var item in instancedObjects)
         {
-            Object ob = new Object();
+            objectinLevel ob = new objectinLevel();
             ob.obstacleType = item.GetComponent<Randomiser>()._ObstacleType;
             ob.pos = transform.position;
             levelData.objects.Add(ob);

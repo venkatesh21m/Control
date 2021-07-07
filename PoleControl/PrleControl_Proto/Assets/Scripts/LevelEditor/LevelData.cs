@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class LevelData
 {
-    public List<Object> objects = new List<Object>();
+    public List<objectinLevel> objects = new List<objectinLevel>();
 
     public string ToJson()
     {
@@ -19,7 +20,7 @@ public class LevelData
 }
 
 [System.Serializable]
-public struct Object
+public struct objectinLevel
 {
     public ObstacleType obstacleType;
     public Vector3 pos;

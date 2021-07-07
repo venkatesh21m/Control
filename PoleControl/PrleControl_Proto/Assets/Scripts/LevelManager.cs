@@ -1,9 +1,13 @@
 using System.Collections.Generic;
 using TMPro;
+using System.IO;
 using UnityEngine;
+using System;
 
 public class LevelManager : MonoBehaviour
 {
+	[SerializeField] List<TextAsset> levels;
+
 	[SerializeField]
 	private GameObject[] obstacle;
 	[SerializeField]
@@ -14,7 +18,7 @@ public class LevelManager : MonoBehaviour
 	private List<GameObject> collectables = new List<GameObject>();
 	private List<GameObject> ActiveObstacles = new List<GameObject>();
 	
-	[SerializeField] private TMP_Text levelText, scoreText;
+	//[SerializeField] private TMP_Text levelText, scoreText;
 	private int currentLevel = 1;
     public static int levelScore;
 
@@ -24,7 +28,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
 	{
-		CreatePool();
+		//CreatePool();
 		
 		Actions.NextLevel += SetNextLevel;
 		Actions.LevelCleared += disableAllObstacles;
@@ -75,19 +79,12 @@ public class LevelManager : MonoBehaviour
 		}
 	}
 
+	#endregion
 	GameObject GetObstacle(ObstacleType type)
 	{
-		foreach (var ob in obstacles)
-		{
-			if (ob.activeSelf) continue;
-			if (ob.GetComponent<Randomiser>().GetObstacleType() != type)
-				continue;
-			return ob;
-		}
-		return null;
+        return obstacle[((int)type)];
 	}
 
-	#endregion
 
 	private void SetNextLevel(int level)
 	{
@@ -101,36 +98,23 @@ public class LevelManager : MonoBehaviour
     {
 		levelScore = 0;
 		// scoreText.text = "Score : " + levelScore;
+		//levelText.text = "Level : " + currentLevel;
+		LevelData levelData = new LevelData();
+		string jsondata = levels[currentLevel].ToString();
+		levelData.LoadFromJsom(jsondata);
+		LoadLevel(levelData);
+	}
 
-		levelText.text = "Level : " + currentLevel;
-
-		var levelObstacles = 10+currentLevel;
-		Vector3 pos;
-		for (var i = 0; i < levelObstacles; i++)
+	public void LoadLevel(LevelData levelData)
+	{
+		disableAllObstacles();
+		foreach (var item in levelData.objects)
 		{
-			GameObject obj;
-			if (i % 2 == 0)
-			{
-				obj = GetObstacle(obstacleType);
-				pos = obj.transform.position;
-				pos.y = (i * 2 )+2;
-				obj.transform.position = pos;
-				obj.SetActive(true);
-			}
-			else
-			{
-				obj = GetObstacle(ObstacleType.Static);
-				pos = obj.transform.position;
-				pos.y = (i * 2) + 2;
-				obj.transform.position = pos;
-				obj.SetActive(true);
-			}
+			GameObject obj = GetObstacle(item.obstacleType);
+			obj = Instantiate(obj);
+			obj.transform.position = item.pos;
 
 			ActiveObstacles.Add(obj);
 		}
-
-		pos = goal.transform.position;
-		pos.y = (levelObstacles * 2) +2;
-		goal.transform.position = pos;
 	}
 }

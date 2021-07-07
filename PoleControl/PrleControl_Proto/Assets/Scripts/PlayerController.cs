@@ -20,7 +20,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody ballRB;
 
     private Vector2 StartTouchpos;
-   
+
+    private void Awake()
+    {
+        Actions.StartGame += StartGame;
+    }
+
+    private void StartGame()
+    {
+        this.enabled = true;
+    }
+
     private void OnEnable()
     {
         ballRB = Ball.GetComponent<Rigidbody>();
@@ -64,11 +74,11 @@ public class PlayerController : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 Touch = Input.GetTouch(0);
-                if(Touch.phase == TouchPhase.Began)
+                if (Touch.phase == TouchPhase.Began)
                 {
                     StartTouchpos = Touch.position;
                 }
-                else if(Touch.phase == TouchPhase.Moved)
+                else if (Touch.phase == TouchPhase.Moved)
                 {
                     Vector2 currentPos = Touch.position;
                     if (currentPos.x < Screen.width / 2)
@@ -97,7 +107,6 @@ public class PlayerController : MonoBehaviour
             }
             #endregion
         }
-
 
         //updating the platform angle of each side
         UpdatePlatform();
