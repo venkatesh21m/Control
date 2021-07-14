@@ -1,18 +1,40 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/USS/Button.uss?fileID=7433441132597879392&amp;guid=0f68a3054e5196b4fb58a36933eb1956&amp;type=3#Button" />
-    <ui:VisualElement name="GameMenu" style="flex-grow: 1; display: none; opacity: 1;">
-        <ui:Label text="Level : 1" display-tooltip-when-elided="true" name="LevelNumber" style="width: 30%; height: 5%; -unity-text-align: lower-left; font-size: 50px; -unity-font-style: bold-and-italic; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=d5f5df52fdf8bb04bbb9b87fc3c85b18&amp;type=3#NotInter-Regular&apos;); border-left-width: 10px; border-right-width: 10px; border-top-width: 10px; border-bottom-width: 10px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;" />
-    </ui:VisualElement>
     <ui:VisualElement name="MainMenu" style="flex-grow: 1; background-color: rgb(94, 94, 94); display: flex; opacity: 1;">
         <ui:Label text="Control" display-tooltip-when-elided="true" name="GameTitle" class="Title" style="position: relative; width: 99%; height: 10%; top: 25%; -unity-font-style: bold-and-italic; -unity-text-align: middle-center; font-size: 200px; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=d5f5df52fdf8bb04bbb9b87fc3c85b18&amp;type=3#NotInter-Regular&apos;); margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; border-left-width: 10px; border-right-width: 10px; border-top-width: 10px; border-bottom-width: 10px; border-top-left-radius: 100px; border-bottom-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); left: auto; right: auto;" />
-        <ui:Button text="Start" display-tooltip-when-elided="true" name="StartButton" class="Button" />
+        <ui:Button text="Start" display-tooltip-when-elided="true" name="StartButton" class="Button" style="display: none;" />
+        <ui:GroupBox name="SIgnInButtons" style="top: 45%; height: 30%; display: flex;">
+            <ui:Label text="SIgnIn" display-tooltip-when-elided="true" name="SignInText" style="height: 25%; margin-bottom: 5%; -unity-font-style: bold-and-italic; font-size: 100px; -unity-text-align: middle-center;" />
+            <ui:Button text="Guest " display-tooltip-when-elided="true" name="AnonymousButton" class="Button" style="display: flex; font-size: 80px; height: 20%; top: auto;" />
+            <ui:Button text="Google" display-tooltip-when-elided="true" name="GoogleButton" class="Button" style="display: flex; font-size: 80px; height: 20%; top: auto;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:VisualElement name="Levels" style="flex-grow: 1; display: none; opacity: 1; background-color: rgb(94, 94, 94);">
+        <ui:Label text="Choose a level" display-tooltip-when-elided="true" name="Choselevel" class="Title" />
+        <ui:ScrollView usage-hints="None" name="LevelsHolder" focusable="true" vertical-scroller-visibility="Hidden" style="flex-grow: 0.75; flex-shrink: 1; flex-basis: auto; justify-content: space-around; align-items: stretch; top: 20%; position: absolute; width: 100%; margin-top: 10%; bottom: 12px;">
+            <ui:Button text="Level 1" display-tooltip-when-elided="true" name="Level1" class="LevelButton" />
+            <ui:Button text="Level 2" display-tooltip-when-elided="true" name="Level2" class="LevelButton" />
+            <ui:Button text="Level 3" display-tooltip-when-elided="true" name="Level3" class="LevelButton" />
+            <ui:Button text="Level 4" display-tooltip-when-elided="true" name="Level4" class="LevelButton" />
+            <ui:Button text="Level 5" display-tooltip-when-elided="true" name="Level5" class="LevelButton" />
+            <ui:Button text="Level 6" display-tooltip-when-elided="true" name="Level6" class="LevelButton" />
+            <ui:Button text="Level 7" display-tooltip-when-elided="true" name="Level7" class="LevelButton" />
+            <ui:Button text="Level 8" display-tooltip-when-elided="true" name="Level8" class="LevelButton" />
+            <ui:Button text="Level 9" display-tooltip-when-elided="true" name="Level9" class="LevelButton" />
+            <ui:Button text="Level 10" display-tooltip-when-elided="true" name="Level10" class="LevelButton" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+    <ui:VisualElement name="GameMenu" style="flex-grow: 1; display: none; opacity: 1;">
+        <ui:Label text="Level : 1" display-tooltip-when-elided="true" name="LevelNumber" style="width: 30%; height: 5%; -unity-text-align: lower-left; font-size: 50px; -unity-font-style: bold-and-italic; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=d5f5df52fdf8bb04bbb9b87fc3c85b18&amp;type=3#NotInter-Regular&apos;); border-left-width: 10px; border-right-width: 10px; border-top-width: 10px; border-bottom-width: 10px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px;" />
     </ui:VisualElement>
     <ui:VisualElement name="GameOver" style="flex-grow: 1; background-color: rgb(94, 94, 94); display: none; opacity: 1;">
         <ui:Label text="Game Over" display-tooltip-when-elided="true" name="GameOverTitle" class="Title" style="position: relative; width: 99%; height: 10%; top: 25%; -unity-font-style: bold-and-italic; -unity-text-align: middle-center; font-size: 150px; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=d5f5df52fdf8bb04bbb9b87fc3c85b18&amp;type=3#NotInter-Regular&apos;); margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; border-left-width: 10px; border-right-width: 10px; border-top-width: 10px; border-bottom-width: 10px; border-top-left-radius: 100px; border-bottom-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); left: auto; right: auto;" />
         <ui:Button text="Restart" display-tooltip-when-elided="true" name="RestartButton" class="Button" />
+        <ui:Button text="Levels" display-tooltip-when-elided="true" name="LevelsButton_GO" class="Button" />
     </ui:VisualElement>
     <ui:VisualElement name="LevelCleared" style="flex-grow: 1; background-color: rgb(94, 94, 94); display: none; opacity: 1;">
         <ui:Label text="Level Finish" display-tooltip-when-elided="true" name="LevelClearedTitle" class="Title" style="position: relative; width: 99%; height: 10%; top: 25%; -unity-font-style: bold-and-italic; -unity-text-align: middle-center; font-size: 150px; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=d5f5df52fdf8bb04bbb9b87fc3c85b18&amp;type=3#NotInter-Regular&apos;); margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; border-left-width: 10px; border-right-width: 10px; border-top-width: 10px; border-bottom-width: 10px; border-top-left-radius: 100px; border-bottom-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); left: auto; right: auto;" />
         <ui:Button text="Next Level" display-tooltip-when-elided="true" name="NextLevelButton" class="Button" />
+        <ui:Button text="Levels&#10;" display-tooltip-when-elided="true" name="LevelsButton_LC" class="Button" />
     </ui:VisualElement>
 </ui:UXML>

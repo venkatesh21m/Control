@@ -1,0 +1,49 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1625923202",
+        "python_version": "3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Apex\\anaconda3\\envs\\ml-agents\\Scripts\\mlagents-learn Config\\PrototypeML.yaml --run-id=ML_AGENTv15 --resume",
+        "mlagents_version": "0.24.0",
+        "mlagents_envs_version": "0.24.0",
+        "communication_protocol_version": "1.4.0",
+        "pytorch_version": "1.7.0+cu110",
+        "numpy_version": "1.20.1",
+        "end_time_seconds": "1625923210"
+    },
+    "total": 8.003366699999999,
+    "count": 1,
+    "self": 0.00652559999999891,
+    "children": {
+        "run_training.setup": {
+            "total": 0.12094720000000003,
+            "count": 1,
+            "self": 0.12094720000000003
+        },
+        "TrainerController.start_learning": {
+            "total": 7.8758939,
+            "count": 1,
+            "self": 8.940000000290382e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 7.381846099999999,
+                    "count": 1,
+                    "self": 7.381846099999999
+                },
+                "TrainerController._save_models": {
+                    "total": 0.4939583999999986,
+                    "count": 1,
+                    "self": 0.007486199999998888,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.4864721999999997,
+                            "count": 1,
+                            "self": 0.4864721999999997
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

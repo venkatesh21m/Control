@@ -1,0 +1,29 @@
+{
+    "My Behavior": {
+        "checkpoints": [
+            {
+                "steps": 499999,
+                "file_path": "results\\ML_AGENTv13\\My Behavior\\My Behavior-499999.onnx",
+                "reward": 1.0247950787182714,
+                "creation_time": 1625920777.8183265
+            },
+            {
+                "steps": 500027,
+                "file_path": "results\\ML_AGENTv13\\My Behavior\\My Behavior-500027.onnx",
+                "reward": 1.0248979559966496,
+                "creation_time": 1625920777.9214237
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500027,
+            "file_path": "results\\ML_AGENTv13\\My Behavior.onnx",
+            "reward": 1.0248979559966496,
+            "creation_time": 1625920777.9214237
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.24.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

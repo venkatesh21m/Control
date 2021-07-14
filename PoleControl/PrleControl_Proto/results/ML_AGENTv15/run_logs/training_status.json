@@ -1,0 +1,23 @@
+{
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.24.0",
+        "torch_version": "1.7.0+cu110"
+    },
+    "My Behavior": {
+        "checkpoints": [
+            {
+                "steps": 0,
+                "file_path": "results\\ML_AGENTv15\\My Behavior\\My Behavior-0.onnx",
+                "reward": null,
+                "creation_time": 1625923210.460216
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 0,
+            "file_path": "results\\ML_AGENTv15\\My Behavior.onnx",
+            "reward": null,
+            "creation_time": 1625923210.460216
+        }
+    }
+}

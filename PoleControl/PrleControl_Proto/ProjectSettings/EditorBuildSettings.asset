@@ -9,4 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Prototype Vertical.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 3a86710828854ea46aaf2681ce36e217, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 082af4ce31aae3b42a686adeb9cbd2ef, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: b139bb3d5fc08a14a9bc43b06f9734f6, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 76f3017f090e53941bebebec21d46098, type: 2}
+    com.unity.ml-agents.settings: {fileID: 11400000, guid: fbe1e6af2c78e9a43b9e8f0c3e65fd13, type: 2}
