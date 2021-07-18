@@ -57,7 +57,7 @@ public class Randomiser : MonoBehaviour
     {
         Vector3 pos = transform.localPosition;
         pos.x = Random.Range(-2, 2);
-        pos.y = Random.Range(2, 5);
+        //pos.y = Random.Range(2, 5);
         transform.localPosition = pos;
     }
 

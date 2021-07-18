@@ -183,7 +183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4827867206144048461
 Transform:
   m_ObjectHideFlags: 0
@@ -274,6 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206144048460
@@ -342,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4827867206184625573
 Transform:
   m_ObjectHideFlags: 0
@@ -433,6 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206184625572
@@ -559,6 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206195507361
@@ -799,6 +805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206254290397
@@ -925,6 +933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206284306214
@@ -1179,6 +1189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 0}
+  agent: 0
   goal: 0
   collectable: 0
 --- !u!54 &4827867206350288903
@@ -1339,6 +1351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206486744094
@@ -1738,6 +1752,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206757545757
@@ -1864,6 +1880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867206961254036
@@ -1990,6 +2008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867207058507099
@@ -2025,7 +2045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4827867207140775821
 Transform:
   m_ObjectHideFlags: 0
@@ -2116,6 +2136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867207140775820
@@ -2210,7 +2232,7 @@ MonoBehaviour:
   m_Model: {fileID: 0}
   m_InferenceDevice: 1
   m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorName: AI_AGENT
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -2236,7 +2258,7 @@ MonoBehaviour:
   rightPoint: {fileID: 4827867205917342757}
   leftConnector: {fileID: 4827867205974478078}
   rightConnector: {fileID: 4827867206149711010}
-  Goal: {fileID: 4827867207341093841}
+  Goal: {fileID: 7966776138239979734}
   ballpos: {x: 0, y: 0.5, z: 0}
   leftpointpos: {x: -2, y: 0, z: 0}
   rightpointpos: {x: 2, y: 0, z: 0}
@@ -2244,8 +2266,9 @@ MonoBehaviour:
   distanceDifference: 4
   useVecObs: 1
   obstacles:
-  - {fileID: 4827867206254290397}
-  - {fileID: 4827867207341093840}
+  - {fileID: 4827867206144048460}
+  - {fileID: 4827867207140775820}
+  - {fileID: 4827867206184625572}
 --- !u!114 &1948772665206205456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2280,7 +2303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4827867207341093841
 Transform:
   m_ObjectHideFlags: 0
@@ -2371,6 +2394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 1
   collectable: 0
 --- !u!114 &4827867207341093840
@@ -2497,6 +2522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867207507467902
@@ -2623,6 +2650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867207511920444
@@ -2749,6 +2778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867207597466235
@@ -2875,6 +2906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
   goal: 0
   collectable: 0
 --- !u!114 &4827867207663088310
@@ -2980,7 +3013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7845910631404710620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.5, z: 0}
+  m_LocalPosition: {x: 0, y: 19.22, z: 0}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3075,7 +3108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal: 0
+  AGENT: {fileID: 4827867207287899968}
+  agent: 1
+  goal: 1
   collectable: 0
 --- !u!54 &1581745510050581106
 Rigidbody:

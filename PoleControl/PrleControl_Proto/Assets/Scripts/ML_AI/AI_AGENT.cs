@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 using System.Collections.Generic;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
@@ -31,10 +31,10 @@ public class AI_AGENT : Agent
     EnvironmentParameters m_ResetParams;
     public override void Initialize()
     {
-        Actions.LevelCleared -= GivepositiveReward;
-        Actions.GameOver -= GiveNegativeReward; 
-        Actions.LevelCleared += GivepositiveReward;
-        Actions.GameOver += GiveNegativeReward;
+        //Actions.LevelCleared -= GivepositiveReward;
+        //Actions.GameOver -= GiveNegativeReward; 
+        //Actions.LevelCleared += GivepositiveReward;
+        //Actions.GameOver += GiveNegativeReward;
         m_BallRb = ball.GetComponent<Rigidbody>();
         m_ResetParams = Academy.Instance.EnvironmentParameters;
         SetResetParameters();
@@ -52,13 +52,13 @@ public class AI_AGENT : Agent
     //    Actions.LevelCleared -= GivepositiveReward;
     //    Actions.GameOver -= GiveNegativeReward;
     //}
-    private void GiveNegativeReward()
+    public void GiveNegativeReward()
     {
-        SetReward(-1f);
-        EndEpisode();
+        SetReward(-0.1f);
+       // EndEpisode();
     }
 
-    private void GivepositiveReward()
+    public void GivepositiveReward()
     {
         SetReward(1f);
         EndEpisode();
@@ -110,16 +110,17 @@ public class AI_AGENT : Agent
         {
             continuousActionsOut[0] = 1;
         }
-        else
-        {
-            continuousActionsOut[0] = 0;
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
+        //else
+        //{
+        //    continuousActionsOut[0] = 0;
+        //}
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             continuousActionsOut[1] = 1;
         }
         else
         {
+            continuousActionsOut[0] = 0;
             continuousActionsOut[1] = 0;
         } 
     }
@@ -149,10 +150,11 @@ public class AI_AGENT : Agent
         //{
         //    SetReward(-0.5f);
         //}
-        //else
-        //{
-        //    SetReward(0.1f);
-        //}
+        else
+        {
+            SetReward(0.1f);
+        }
+
         if (balldistancetoGoalpoint < 1)
         {
             SetReward(0.1f);

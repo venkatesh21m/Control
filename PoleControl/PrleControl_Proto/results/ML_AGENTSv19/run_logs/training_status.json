@@ -1,0 +1,29 @@
+{
+    "AI_AGENT": {
+        "checkpoints": [
+            {
+                "steps": 49992,
+                "file_path": "results\\ML_AGENTSv19\\AI_AGENT\\AI_AGENT-49992.onnx",
+                "reward": 1.5916666289170582,
+                "creation_time": 1626286559.552533
+            },
+            {
+                "steps": 57369,
+                "file_path": "results\\ML_AGENTSv19\\AI_AGENT\\AI_AGENT-57369.onnx",
+                "reward": 1.3136053328611412,
+                "creation_time": 1626286567.0827684
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 57369,
+            "file_path": "results\\ML_AGENTSv19\\AI_AGENT.onnx",
+            "reward": 1.3136053328611412,
+            "creation_time": 1626286567.0827684
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.24.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AI_AGENT": {
+        "checkpoints": [
+            {
+                "steps": 1459917,
+                "file_path": "results\\ML_AGENTSv26\\AI_AGENT\\AI_AGENT-1459917.onnx",
+                "reward": 12.004256079171567,
+                "creation_time": 1626290999.7209353
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1459917,
+            "file_path": "results\\ML_AGENTSv26\\AI_AGENT.onnx",
+            "reward": 12.004256079171567,
+            "creation_time": 1626290999.7209353
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.24.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

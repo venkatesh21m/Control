@@ -909,6 +909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45be84feb076a64390e2a746904f51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AGENT: {fileID: 0}
+  agent: 0
   goal: 0
   collectable: 0
 --- !u!65 &762017151

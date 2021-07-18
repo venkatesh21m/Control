@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1626283063",
+        "python_version": "3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Apex\\anaconda3\\envs\\ml-agents\\Scripts\\mlagents-learn Config\\PrototypeML.yaml --run-id=ML_AGENTSv15",
+        "mlagents_version": "0.24.0",
+        "mlagents_envs_version": "0.24.0",
+        "communication_protocol_version": "1.4.0",
+        "pytorch_version": "1.7.0+cu110",
+        "numpy_version": "1.20.1",
+        "end_time_seconds": "1626283124"
+    },
+    "total": 61.0666565,
+    "count": 1,
+    "self": 0.005695199999998124,
+    "children": {
+        "run_training.setup": {
+            "total": 0.14445469999999982,
+            "count": 1,
+            "self": 0.14445469999999982
+        },
+        "TrainerController.start_learning": {
+            "total": 60.916506600000005,
+            "count": 1,
+            "self": 0.0001395999999971309,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 60.916193500000006,
+                    "count": 1,
+                    "self": 60.916193500000006
+                },
+                "TrainerController._save_models": {
+                    "total": 0.0001735000000024911,
+                    "count": 1,
+                    "self": 0.0001735000000024911
+                }
+            }
+        }
+    }
+}
