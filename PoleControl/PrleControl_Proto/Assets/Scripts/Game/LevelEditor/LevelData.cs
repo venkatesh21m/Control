@@ -1,28 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-[System.Serializable]
-public class LevelData
+namespace Rudrac.Control
 {
-    public List<objectinLevel> objects = new List<objectinLevel>();
-
-    public string ToJson()
+    [System.Serializable]
+    public class LevelData
     {
-        return JsonUtility.ToJson(this);
+        public List<objectinLevel> objects = new List<objectinLevel>();
+
+        public string ToJson()
+        {
+            return JsonUtility.ToJson(this);
+        }
+
+        public void LoadFromJsom(string json)
+        {
+            JsonUtility.FromJsonOverwrite(json, this);
+        }
+
     }
 
-    public void LoadFromJsom(string json)
+    [System.Serializable]
+    public struct objectinLevel
     {
-        JsonUtility.FromJsonOverwrite(json, this);
+        public ObstacleType obstacleType;
+        public Vector3 pos;
     }
-
 }
-
-[System.Serializable]
-public struct objectinLevel
-{
-    public ObstacleType obstacleType;
-    public Vector3 pos;
-}
-

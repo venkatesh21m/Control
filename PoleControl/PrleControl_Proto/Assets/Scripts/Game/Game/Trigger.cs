@@ -1,55 +1,33 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Trigger : MonoBehaviour
+namespace Rudrac.Control
 {
-    public AI_AGENT AGENT;
-    public bool agent = default;
-    [SerializeField] private bool goal;
-    [SerializeField] private bool collectable;
-    private void OnTriggerEnter(Collider other)
+    public class Trigger : MonoBehaviour
     {
-        if (goal)
+
+        [SerializeField] private bool goal;
+        [SerializeField] private bool collectable;
+
+        private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Ball"))
+            if (goal)
             {
-                if (agent)
-                {
-                    AGENT.GivepositiveReward();
-                }
-                else
+                if (other.CompareTag("Ball"))
                 {
                     Actions.LevelCleared?.Invoke();
                 }
-               // SetReward(-1f);
             }
-        }
-        else if (collectable)
-        {
-            if (other.CompareTag("Ball"))
+            else if (collectable)
             {
-                if (agent)
-                {
-
-                }
-                else
+                if (other.CompareTag("Ball"))
                 {
                     Actions.CollectableCollected?.Invoke();
                     this.gameObject.SetActive(false);
                 }
             }
-        }
-        else
-        {
-            if (other.CompareTag("Ball"))
+            else
             {
-                if (agent)
-                {
-                    AGENT.GiveNegativeReward();
-                }
-                else
+                if (other.CompareTag("Ball"))
                 {
                     Actions.GameOver?.Invoke();
                 }

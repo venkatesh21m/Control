@@ -49,30 +49,6 @@ MonoBehaviour:
     m_Address: Goal
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: c5e295db6fd3b194e9e3e9c8497614a5
-    m_Address: Assets/Levels/level1.txt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 9d951ae6e787c9c4694584ab4f4f130c
-    m_Address: Assets/Levels/level2.txt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: c7f54194f9cf6e940b5bf16443937563
-    m_Address: Assets/Levels/level3.txt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 79855a301c03b84489c99e64e98ab695
-    m_Address: Assets/Levels/level4.txt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: f2df1cc3eb0f8f24794a9865995b7f58
-    m_Address: Assets/Levels/level5.txt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-  - m_GUID: 4ceca6c7f7199df4fa80bb80348b0d49
-    m_Address: Assets/Levels/level6.txt
-    m_ReadOnly: 0
-    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b13b338daef29044aba3b8cb4c1402ea, type: 2}
   m_SchemaSet:

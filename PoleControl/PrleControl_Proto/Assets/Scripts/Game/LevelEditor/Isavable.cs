@@ -1,6 +1,8 @@
-
-public interface ISavable 
+namespace Rudrac.Control
 {
-    public void PopulateSaveData(LevelData levelData);
-    public void LoadSaveData(LevelData levelData);
+    public interface ISavable
+    {
+        public void PopulateSaveData(LevelData levelData);
+        public void LoadSaveData(LevelData levelData);
+    }
 }

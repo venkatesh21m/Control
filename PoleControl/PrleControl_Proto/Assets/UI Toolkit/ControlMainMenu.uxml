@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="height: auto; align-items: center; flex-grow: 1;">
+        <ui:Label text="Control" display-tooltip-when-elided="true" style="position: absolute; top: 75%; -unity-text-align: middle-center; width: 50%; height: 6%; font-size: 50px; -unity-font-style: bold-and-italic;" />
+        <ui:Label text="Control" display-tooltip-when-elided="true" style="top: 25%; width: 75%; height: 10%; font-size: 100px; -unity-text-align: middle-center; position: absolute; -unity-font-style: bold-and-italic;" />
+    </ui:VisualElement>
+</ui:UXML>
